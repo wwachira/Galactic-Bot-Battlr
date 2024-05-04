@@ -1,4 +1,4 @@
-# Galactic-Bot-Battlr
+# Galactic-Bot-Battlr - Phase 2 Code Challenge 
 Project Setup
 Once you have a plan in place for the application, take the following steps:
 
