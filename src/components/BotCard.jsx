@@ -1,56 +1,17 @@
-const botTypeClasses = {
-	Support: 'icon plus circle',
-	Medic: 'icon ambulance',
-	Assault: 'icon military',
-	Defender: 'icon shield',
-	Captain: 'icon star',
-	Witch: 'icon magic',
-};
-
-function BotCard({ bot, handleAdd, handleDelete, removeBotFromArmy }) {
+const BotCard = ({ bot, onEnlist, onDelete }) => {
 	return (
-		<div className='ui column'>
-			<div className='ui card' key={bot.id} onClick={() => handleAdd(bot)}>
-				<div className='image'>
-					<img alt='oh no!' src={bot.avatar_url} />
-				</div>
-				<div className='content'>
-					<div className='header'>
-						{bot.name}
-						<i className={botTypeClasses[bot.bot_class]} />
-					</div>
-					<div className='meta text-wrap'>
-						<small>{bot.catchphrase}</small>
-					</div>
-				</div>
-				<div className='extra content'>
-					<span>
-						<i className='icon heartbeat' />
-						{bot.health}
-					</span>
-
-					<span>
-						<i className='icon lightning' />
-						{bot.damage}
-					</span>
-					<span>
-						<i className='icon shield' />
-						{bot.armor}
-					</span>
-					<span>
-						<div className='ui center aligned segment basic'>
-							<button
-								className='ui mini red button'
-								onClick={() => handleDelete(bot)}
-							>
-								x
-							</button>
-						</div>
-					</span>
-				</div>
-			</div>
+	  <div className="bot-card">
+		<h3>{bot.name}</h3>
+		<p>Class: {bot.class}</p>
+		<p>Health: {bot.health}</p>
+		<p>Damage: {bot.damage}</p>
+		<p>Armor: {bot.armor}</p>
+		<div>
+		  <button onClick={() => onEnlist(bot)}>Enlist</button>
+		  <button onClick={() => onDelete(bot)}>x</button>
 		</div>
+	  </div>
 	);
-}
-
-export default BotCard;
+  };
+  
+  export default BotCard;

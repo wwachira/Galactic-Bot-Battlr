@@ -1,28 +1,15 @@
-import BotCard from './BotCard';
-
-function YourBotArmy({ botArmy, deleteBot, removeBotFromArmy, addBotToArmy }) {
-	console.log(botArmy);
-	//your bot army ..
-	const mappedBotArmy = botArmy.map((bot) => {
-		return (
-			<BotCard
-				key={bot.id}
-				bot={bot}
-				handleAdd={removeBotFromArmy}
-				handleDelete={deleteBot}
-			/>
-		);
-	});
+const YourBotArmy = ({ army, onRelease }) => {
 	return (
-		<div className='ui segment inverted red bot-army'>
-			<div className='ui five column grid'>
-				Your Bot Army
-				<div className='row bot-army-row'>
-					{mappedBotArmy}
-				</div>
-			</div>
-		</div>
+	  <div className="your-bot-army">
+		<h2>Your Bot Army</h2>
+		{army.map(bot => (
+		  <div key={bot.id} className="bot-card">
+			<p>{bot.name}</p>
+			<button onClick={() => onRelease(bot)}>Release</button>
+		  </div>
+		))}
+	  </div>
 	);
-}
-
-export default YourBotArmy;
+  };
+  
+  export default YourBotArmy;
