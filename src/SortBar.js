@@ -9,3 +9,4 @@ const SortBar = ({ onSort }) => {
   };
   
   export default SortBar;
+  

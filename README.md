@@ -10,15 +10,21 @@ In your project directory, create a db.json file and use this dataLinks to an ex
 Run this command to get the backend started:
 json-server --watch db.json
 # Look of my App
+npm install -g serve
+serve -s build
 src/
-├── App.jsx
-├── BotsPage.jsx
+├── App.js
+├── BotsPage.js
 ├── BotCard.jsx
-├── BotCollection.jsx
-├── BotSpecs.jsx
-├── YourBotArmy.jsx
-├── SortBar.jsx
+├── BotCollection.js
+├── BotSpecs.js
+├── YourBotArmy.js
+├── SortBar.js
   ├── index.css
-  └── main.jsx
+  └── main.js
 
-json-server --watch db.json in my terminal
+   Serving!                                │
+   │                                           │
+   │   - Local:    http://localhost:3000       │
+   │   - Network:  http://192.168.0.112:3000   │
+   │                                          

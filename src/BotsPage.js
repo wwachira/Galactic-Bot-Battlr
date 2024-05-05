@@ -3,7 +3,6 @@ import BotCollection from './BotCollection';
 import YourBotArmy from './YourBotArmy';
 import BotSpecs from './BotSpecs';
 import SortBar from './SortBar';
-import axios from 'axios';
 
 const BotsPage = () => {
   const [bots, setBots] = useState([]);
@@ -13,12 +12,13 @@ const BotsPage = () => {
   const [filteredBots, setFilteredBots] = useState([]);
 
   useEffect(() => {
-    const fetchBots = async () => {
-      const response = await axios.get('https://drive.google.com/file/d/157IfYxr4Bp63-ByF1g1wCP1uOpQ5i2R4/view');
-      setBots(response.data.bots);
-      setFilteredBots(response.data.bots);
-    };
-    fetchBots();
+    // Fetch data from the local server
+    fetch('http://localhost:3000/bots')
+      .then(response => response.json())
+      .then(data => {
+        setBots(data);
+        setFilteredBots(data);
+      });
   }, []);
 
   const handleEnlist = (bot) => {
@@ -31,8 +31,7 @@ const BotsPage = () => {
     setYourBotArmy(yourBotArmy.filter(b => b.id !== bot.id));
   };
 
-  const handleDelete = async (bot) => {
-    await axios.delete(`/bots/${bot.id}`);
+  const handleDelete = (bot) => {
     setBots(bots.filter(b => b.id !== bot.id));
     setYourBotArmy(yourBotArmy.filter(b => b.id !== bot.id));
   };

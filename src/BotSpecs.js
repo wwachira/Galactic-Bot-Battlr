@@ -12,3 +12,4 @@ const BotSpecs = ({ bot, onEnlist }) => {
   };
   
   export default BotSpecs;
+  
