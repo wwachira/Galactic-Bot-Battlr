@@ -1,16 +1,12 @@
-import { useState } from 'react'
-
-import './App.css'
+import BotsPage from "./components/BotsPage";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
   
-     
-    </>
-  )
+  return (
+    <div className="App">
+      <BotsPage />
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -9,3 +9,10 @@ Please make sure you regularly commit to the repository.
 In your project directory, create a db.json file and use this dataLinks to an external site. for your server DB.
 Run this command to get the backend started:
 json-server --watch db.json
+# Look of App
+BotPage is the highest component below App, and serves as the main container for all of the pieces of the page.
+
+BotCollection and YourBotArmy are container components, which are children of BotPage. BotCollection is where all the bots will be displayed, while YourBotArmy will only display the bots selected by the user.
+
+BotCard and BotSpecs are presentational components that will render out information about an individual bot formatted for a list view and for a full view. tyled, and it is your responsibility to get the data into them.
+
