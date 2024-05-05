@@ -1,4 +1,4 @@
-# Galactic-Bot-Battlr - Phase 2 Code Challenge 
+# Galactic-Bot-Battlr - Phase 2 | wk2 Code Challenge 
 Project Setup
 Once you have a plan in place for the application, take the following steps:
 
@@ -12,7 +12,16 @@ json-server --watch db.json
 # Look of App
 BotPage is the highest component below App, and serves as the main container for all of the pieces of the page.
 
-BotCollection and YourBotArmy are container components, which are children of BotPage. BotCollection is where all the bots will be displayed, while YourBotArmy will only display the bots selected by the user.
+ BotCollection is where all the bots will be displayed, while YourBotArmy will only display the bots selected by the user.
 
-BotCard and BotSpecs are presentational components that will render out information about an individual bot formatted for a list view and for a full view. tyled, and it is your responsibility to get the data into them.
+BotCard and BotSpecs components that will render out information about individual bots formatted for a list view and for a full view.
 
+# json-server --watch db.json in my terminal
+Index:
+http://localhost:3000/
+
+Static files:
+Serving ./public directory if it exists
+
+Endpoints:
+http://localhost:3000/bots
