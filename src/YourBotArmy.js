@@ -1,3 +1,4 @@
+import BotSpecs from './BotSpecs';
 const YourBotArmy = ({ army, onRelease }) => {
     return (
       <div className="your-bot-army">

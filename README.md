@@ -12,6 +12,7 @@ json-server --watch db.json
 # Look of my App
 npm install -g serve
 serve -s build
+
 src/
 ├── App.js
 ├── BotsPage.js
@@ -20,8 +21,8 @@ src/
 ├── BotSpecs.js
 ├── YourBotArmy.js
 ├── SortBar.js
-  ├── index.css
-  └── main.js
+├── index.css
+└── main.js
 
    Serving!                                │
    │                                           │
