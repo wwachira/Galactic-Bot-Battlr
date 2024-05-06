@@ -12,7 +12,6 @@ const BotsPage = () => {
   const [filteredBots, setFilteredBots] = useState([]);
 
   useEffect(() => {
-    // Fetch data from the local server
     fetch('http://localhost:3000/bots')
       .then(response => response.json())
       .then(data => {
