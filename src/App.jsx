@@ -3,7 +3,7 @@ import { Router, Routes, Route } from 'react-router-dom';
 import BotCollection from "./components/BotCollection";
 import YourBotArmy from "./components/YourBotArmy";
 import BotSpecs from "./components/BotSpecs";
-import "./App.css";
+import "./app.css";
 
 function App() {
 return (

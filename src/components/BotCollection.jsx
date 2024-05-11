@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import BotCard from "./BotCard";
 import SortBar from "./SortBar";
-import "./App.css";
+
 
 function BotCollection() {
 const [bots, setBots] = useState([]);
