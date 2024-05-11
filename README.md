@@ -1,8 +1,7 @@
 # Galactic-Bot-Battlr - Phase 2 | wk2 Code Challenge 
 # adding a video
 
-file:///home/wangumvp/Downloads/Liz.W.W.mp4
-
+Has not worked please use the live link below
 
 # Live link
 https://photos.app.goo.gl/ddqN6cchcPqgf4nt5 
