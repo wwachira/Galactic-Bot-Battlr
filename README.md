@@ -50,7 +50,7 @@ http://localhost:3000/bots
 
  *  History restored 
 
-wangumvp@WANGU:~/Documents/bot$ json-server --watch db.json
+ json-server --watch db.json
 --watch/-w can be omitted, JSON Server 1+ watches for file changes by default
 JSON Server started on PORT :3000
 Press CTRL-C to stop
