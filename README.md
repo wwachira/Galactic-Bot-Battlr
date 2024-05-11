@@ -21,8 +21,8 @@ src/
 ├── BotSpecs.js
 ├── YourBotArmy.js
 ├── SortBar.js
-├── index.css
-└── main.js
+ ├──  index.css
+ └──  main.js
 
    Serving!                                │
    │                                           │
