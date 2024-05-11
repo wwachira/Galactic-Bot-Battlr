@@ -1,4 +1,7 @@
 # Galactic-Bot-Battlr - Phase 2 | wk2 Code Challenge 
+# Live link
+https://photos.app.goo.gl/ddqN6cchcPqgf4nt5 
+
 # Project Setup
 Once you have a plan in place for the application, take the following steps:
 
