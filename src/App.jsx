@@ -1,9 +1,9 @@
-import React from "react";
-import { Router, Routes, Route } from 'react-router-dom';
-import BotCollection from "./components/BotCollection";
-import YourBotArmy from "./components/YourBotArmy";
-import BotSpecs from "./components/BotSpecs";
-import "./app.css";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import BotCollection from './components/BotCollection';
+import YourBotArmy from './components/YourBotArmy';
+import BotSpecs from './components/BotSpecs';
+import "./App.css"
 
 function App() {
 return (
@@ -18,4 +18,5 @@ return (
 </Router>
 );
 }
+
 export default App;
